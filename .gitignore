@@ -1,0 +1,7 @@
+# Player data never goes in git — this repo is public.
+private/
+*.html
+.env
+.env.*
+.DS_Store
+node_modules
