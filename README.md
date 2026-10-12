@@ -11,8 +11,10 @@ Database for The Mine, the 49ers player development tracker. Frontend lives in
 1. Supabase SQL editor → run `supabase/migrations/0001_init.sql` (schema, RLS, realtime).
 2. Supabase SQL editor → run `private/0002_seed_merged.sql` (merged data + join code).
    It refuses to run twice.
-3. Auth → Providers → Email: "Confirm email" off.
-4. Everyone signs up in the app, picks their name, and enters the join code.
+3. Supabase SQL editor → run `supabase/migrations/0003_report_and_headshots.sql`, then
+   `private/0004_backfill_espn.sql` (headshot ids, positions, numbers).
+4. Auth → Providers → Email: "Confirm email" off.
+5. Everyone signs up in the app, picks their name, and enters the join code.
 
 ## Model
 
